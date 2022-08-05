@@ -1,12 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import JobPost from './JobPost/JobPost';
+import Home from './Home/Home';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <p>Hello</p>
-      <JobPost></JobPost>
+
+<Router>
+<Switch>
+        <Route exact path="/">
+      <Home></Home>
+     </Route>
+     </Switch>
+     </Router>
+
     </div>
   );
 }

@@ -26,7 +26,7 @@ function JobPost() {
       <input {...register("location", { required: true, maxLength: 20 })} placeholder='location'/>
       <textarea {...register("jobDescription")} placeholder='Job Description'/>
       <textarea {...register("mustSkills")} placeholder='Must have these skills'/>
-      <input type="salaryRange" {...register("price")} placeholder='Salary range'/>
+      <input type="salaryRange" {...register("salaryRange")} placeholder='Salary range'/>
       <input {...register("image")} placeholder='Img URL'/>
       <input type="submit" />
     </form>
