@@ -24,7 +24,7 @@ function Service({service}) {
        
 
         <Link to={`/jobPost/${_id}`}>
- <button className='btn btn-info'>more of {companyName.toLowerCase()}</button> 
+ <button className='btn btn-info mt-2'>Interested in  {companyName.toLowerCase()}</button> 
         
         </Link>
        
