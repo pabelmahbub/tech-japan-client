@@ -19,14 +19,17 @@ function JobPost() {
 
   return (
    <div className='add-service'>
-         <h1>Add your services here.</h1>
+         <h1 style={{fontSize:22,paddingTop:26,color:"#137373"}}>Job posting is here</h1>
          {/**React-hook-form */}
       <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("postitionName", { required: true, maxLength: 20 })} placeholder='Position Name'/>
-      <input {...register("location", { required: true, maxLength: 20 })} placeholder='location'/>
+      <input {...register("companyName", { required: true, maxLength: 20 })} placeholder='Company Name *(or psuedo name)'/>
+      <input {...register("positionName", { required: true, maxLength: 20 })} placeholder='Position Name *'/>
+      <input {...register("location", { required: true, maxLength: 20 })} placeholder='location *'/>
+      <input {...register("languageLevel", { required: true, maxLength: 40 })} placeholder='Language Level *'/>
+      <input {...register("programminglanguages", { required: true, maxLength: 70 })} placeholder="programming Languages *"/>
       <textarea {...register("jobDescription")} placeholder='Job Description'/>
       <textarea {...register("mustSkills")} placeholder='Must have these skills'/>
-      <input type="salaryRange" {...register("salaryRange")} placeholder='Salary range'/>
+      <input type="salaryRange" {...register("salaryRange",{ required: true, maxLength:20 })} placeholder='Salary range(yearly) *'/>
       <input {...register("image")} placeholder='Img URL'/>
       <input type="submit" />
     </form>
