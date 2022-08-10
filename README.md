@@ -1,5 +1,6 @@
--https://tech-japan.netlify.app/
--backend code is yet to deploy in Heroku.
+*. https://tech-japan.netlify.app/
+
+*. backend code is yet to deploy in Heroku.
 ## Available Scripts
 
 In the project directory, you can run:
