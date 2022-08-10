@@ -1,9 +1,9 @@
 import React from 'react';
 import {useEffect,useState} from 'react';
 import Service from '../Service/Service';
-import './Services.css'
-
-
+import './Services.css';
+import Spinner from "react-activity/dist/Spinner";
+import "react-activity/dist/Spinner.css";
 
 function Services() {
     const [services, setServices] = useState([]);
@@ -15,7 +15,16 @@ function Services() {
     
   return (
     <div id="services">
-      <div  className='service-container'>
+    
+        <div style={{display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}>
+                {
+                  services.length === 0 && <Spinner />
+                }
+        </div>
+        <div  className='service-container'>
         {
             services.map(service =><Service
             key={service._id}

@@ -1,4 +1,9 @@
 .service{
                               background-color: rgb(249, 252, 253);
                               border-radius: 17px;
+                              display:'grid';
+        justify-content: 'center';
+        align-items: 'center';
+        height: '90vh';
+
                           }
