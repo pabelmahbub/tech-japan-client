@@ -8,7 +8,7 @@ import "react-activity/dist/Spinner.css";
 function Services() {
     const [services, setServices] = useState([]);
     useEffect(() => {
-      fetch('http://localhost:5000/jobs/')
+      fetch('http://localhost:5000/jobs')
       .then(res=>res.json())
       .then(data=>setServices(data));
     }, [])
@@ -19,6 +19,7 @@ function Services() {
         <div style={{display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            
           }}>
                 {
                   services.length === 0 && <Spinner />
@@ -27,7 +28,7 @@ function Services() {
         <div  className='service-container'>
         {
             services.map(service =><Service
-            key={service._id}
+            key={service.id}
             service={service}
             ></Service>)
         }

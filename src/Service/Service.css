@@ -1,9 +1,13 @@
-.service{
-                              background-color: rgb(249, 252, 253);
+.service-all{
+                              background-color: rgb(242, 247, 249);
                               border-radius: 17px;
                               display:'grid';
-        justify-content: 'center';
-        align-items: 'center';
-        height: '90vh';
+                              padding-left: '10%';
+                              padding-right: "10%";
+                              align-self: center;
+                              align-items: center;
+                              align-content: center;
+                              text-align: center;
+                              padding-bottom: 10px;
 
                           }
