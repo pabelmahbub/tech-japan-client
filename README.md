@@ -1,7 +1,6 @@
-# Getting Started with Create React App
+*. https://tech-japan.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+*. backend code is yet to deploy in Heroku.
 ## Available Scripts
 
 In the project directory, you can run:
