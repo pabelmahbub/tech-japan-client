@@ -1,4 +1,4 @@
-*. https://tech-japan.netlify.app/
+*. https://my-tech-jp.netlify.app/
 
 *. backend code is yet to deploy in Heroku.
 ## Available Scripts
