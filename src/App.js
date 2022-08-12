@@ -9,6 +9,7 @@ import ServiceDetail from './ServiceDetail/ServiceDetail';
 //import Service from "./Service/Service";
 import JobPost from "./JobPost/JobPost";
 import Login from './Login/Login';
+import NotFound from "./NotFound/NotFound";
 
 function App(){
   return(
@@ -20,6 +21,7 @@ function App(){
       <Route path="/jobPost" element={<JobPost />} />
       <Route path="/service/:serviceId" element={<ServiceDetail />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/*" element={<NotFound />} />
 
     </Routes>
   </BrowserRouter>
