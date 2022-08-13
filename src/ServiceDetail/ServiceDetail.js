@@ -24,7 +24,9 @@ const ServiceDetail = () => {
      <Header></Header>
 
 
-       <div  style={{paddingLeft:'10%',paddingRight:'10%'}}>
+<div style={{display:'flex',width:'100%'}}>
+
+<div  style={{paddingLeft:'10%',paddingRight:'10%',width:'70%',backgroundColor:"rgb(242, 247, 249)"}}>
            
            <img src={service.image} alt='' width={60} height={60} style={{marginTop:"10px",borderRadius:30}}></img>
            <h1 style={{fontSize:22,fontWeight:800,paddingTop:'10px'}}>Company Name: {service.companyName}</h1>
@@ -53,12 +55,19 @@ const ServiceDetail = () => {
 
           <div className='text-center'> 
                <Link to="/login">
-                   <button className='btn btn-primary'>Proceed to apply</button>
+                   <button  style={{marginBottom:"20px"}} className='btn btn-primary'>Proceed to apply</button>
                    <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" />
                </Link> 
          </div>
        </div>
 
+
+    <div style={{width:'30%'}}>
+
+        <AnotherBox></AnotherBox>
+    </div>
+</div>
+       
 
 
 

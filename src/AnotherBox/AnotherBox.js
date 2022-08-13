@@ -2,9 +2,8 @@ import React from 'react'
 
 function AnotherBox() {
   return (
-    <div style={{backgroundColor:'blue'}}>
-                              <h1>Hello</h1>
-
+    <div style={{textAlign:'center',paddingTop:"20px"}}>
+               <h4>Google  advertisements</h4> 
     </div>
   )
 }
