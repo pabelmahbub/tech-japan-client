@@ -1,6 +1,4 @@
-*. https://my-tech-jp.netlify.app/
-
-*. backend code is yet to deploy in Heroku.
+##.https://tech-japan-1.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
