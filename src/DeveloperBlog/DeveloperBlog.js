@@ -11,7 +11,7 @@ function DeveloperBlog() {
          const { register, handleSubmit,reset } = useForm();
          const onSubmit = data => {
                      console.log(data);
-                     axios.post('http://localhost:5000/addBlog', data)
+                     axios.post('https://tech-japan-express.herokuapp.com/addBlog', data)
                      .then(res=>{
                               console.log(res);
                               if(res.data.insertedId){
@@ -23,7 +23,7 @@ function DeveloperBlog() {
 
 const [jobBlogs, setJobBlogs] = useState([]);
 useEffect(() => {
-  fetch('http://localhost:5000/postBlog')
+  fetch('https://tech-japan-express.herokuapp.com/postBlog')
   .then(res=>res.json())
   .then(data=>setJobBlogs(data));
 }, [])
@@ -61,6 +61,7 @@ useEffect(() => {
             }
     </div>
     <div  className='devBlog-container'>
+                              <h4 style={{textAlign:'center',paddingTop:"30px"}}> Developer's story of succesfully getting a job from Tech-Japan.</h4>
     {
         jobBlogs.map(service =><Blogs
         key={service.id}

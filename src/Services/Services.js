@@ -8,7 +8,7 @@ import "react-activity/dist/Spinner.css";
 function Services() {
     const [services, setServices] = useState([]);
     useEffect(() => {
-      fetch('http://localhost:5000/jobs')
+      fetch('https://tech-japan-express.herokuapp.com/jobs')
       .then(res=>res.json())
       .then(data=>setServices(data));
     }, [])
@@ -19,7 +19,7 @@ function Services() {
         <div style={{display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            
+
           }}>
                 {
                   services.length === 0 && <Spinner />

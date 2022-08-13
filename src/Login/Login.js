@@ -3,7 +3,7 @@ import React from 'react'
 function Login() {
   return (
     <div>
-                              <h1>Developer is sleeping</h1>
+                              <h1>Login is developing.....</h1>
     </div>
   )
 }

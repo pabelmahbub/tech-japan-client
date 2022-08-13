@@ -1,8 +1,9 @@
 .blogs-all{
-                              background-color: rgb(246, 252, 252);
+                              background-color: rgb(230, 251, 206);
                               
                               border-radius: 17px;
                               padding-left: 50px;
+                              padding-right:30px;
                               padding-bottom: 20px;
                               margin: 25px;
                              /* margin-bottom: '40px';
