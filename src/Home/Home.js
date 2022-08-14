@@ -8,7 +8,6 @@ import Footer from '../Footer/Footer';
 function Home() {
   return (
     <div>
-                              <MyNavbar></MyNavbar>
                             
                               <Banner></Banner>
                           
@@ -17,9 +16,7 @@ function Home() {
                              </div>
                              
                             
-                             <div style={{marginTop:50}}>
-                              <Footer></Footer>
-                              </div>
+                            
                              
                             
     </div>

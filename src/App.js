@@ -13,11 +13,15 @@ import NotFound from "./NotFound/NotFound";
 import Register from './Register/Register';
 import HireBlog from "./HireBlog/HireBlog";
 import DeveloperBlog from "./DeveloperBlog/DeveloperBlog";
+import MyNavbar from "./MyNavbar/MyNavbar";
+import Footer from "./Footer/Footer";
+import ManageJob from './MangeJob/ManageJob';
 
 function App(){
   return(
 
  <BrowserRouter>
+ <MyNavbar></MyNavbar>
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route path="/" element={<Home />} />
@@ -27,8 +31,10 @@ function App(){
       <Route path="/developerBlog" element={<DeveloperBlog />}/>
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register/>}/>
+      <Route path="/manageJob" element={<ManageJob />}/>
       <Route path="/*" element={<NotFound />} />
     </Routes>
+    <Footer></Footer>
   </BrowserRouter>
 );
         }

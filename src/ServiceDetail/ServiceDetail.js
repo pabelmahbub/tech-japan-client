@@ -3,7 +3,6 @@ import { useState,useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import AnotherBox from '../AnotherBox/AnotherBox';
 import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 
 const ServiceDetail = () => {
     
@@ -21,12 +20,11 @@ const ServiceDetail = () => {
     return (
 
  <div>
-     <Header></Header>
 
 
-<div style={{display:'flex',width:'100%'}}>
+<div className='service-detail' style={{display:'flex',width:'100%'}}>
 
-<div  style={{paddingLeft:'10%',paddingRight:'10%',width:'70%',backgroundColor:"rgb(242, 247, 249)"}}>
+<div className='service-left' style={{paddingLeft:'10%',paddingRight:'10%',width:'70%',backgroundColor:"rgb(242, 247, 249)"}}>
            
            <img src={service.image} alt='' width={60} height={60} style={{marginTop:"10px",borderRadius:30}}></img>
            <h1 style={{fontSize:22,fontWeight:800,paddingTop:'10px'}}>Company Name: {service.companyName}</h1>
@@ -74,7 +72,6 @@ const ServiceDetail = () => {
     
 
        
-      <Footer></Footer>
 
 
         </div>

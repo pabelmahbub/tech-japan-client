@@ -2,7 +2,7 @@ import React from 'react'
 
 function HireBlog() {
   return (
-    <div>HireBlog</div>
+    <div>HireBlog is coming soon. It's section for the company who got the best fit developer from this site.</div>
   )
 }
 

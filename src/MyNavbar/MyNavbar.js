@@ -20,6 +20,7 @@ function MyNavbar() {
           <Nav.Link as={Link} to="/developerBlog">Developer?</Nav.Link>
           <Nav.Link as={Link} to="/hireBlog">Want to Hire?</Nav.Link>
           <Nav.Link as={Link} to="/jobPost">Post Job</Nav.Link>
+          <Nav.Link as={Link} to="/mangeJob">Admin Task</Nav.Link>
         
             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

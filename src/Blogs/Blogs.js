@@ -12,7 +12,7 @@ function Blogs({service}) {
   return (
     <div className='blogs-all' >
 
-       
+    
             <img src={image} alt='' width={120} height={120} style={{marginTop:"10px",borderRadius:"60px"}}></img>
             <h1 style={{fontSize:22,color:"salmon",fontWeight:600,paddingTop:"10px"}}>Developer Name:<span>{developerName}</span></h1>
             <h1 style={{fontSize:19,fontWeight:600,paddingTop:"10px"}}>Company Name:<span>{companyName}</span></h1>
