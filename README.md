@@ -1,4 +1,4 @@
-## live site : https://tech-japan-2.netlify.app/
+## live site : https://tech-japan-3.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
