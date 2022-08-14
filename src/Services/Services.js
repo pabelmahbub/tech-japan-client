@@ -14,14 +14,14 @@ function Services() {
     const [size, setSize] = useState(6);
    
     useEffect(() => {
-      fetch(`http://localhost:5000/jobs?page=${page}&size=${size}`)
+      fetch(`https://tech-japan-express.herokuapp.com/jobs?page=${page}&size=${size}`)
       .then(res=>res.json())
       .then(data=>setServices(data));
     }, [page,size])
     
 
     useEffect(() => {
-      fetch('http://localhost:5000/serviceCount')
+      fetch('https://tech-japan-express.herokuapp.com/serviceCount')
       .then(res=>res.json())
       .then(data =>{
           const count = data.count;
