@@ -16,6 +16,7 @@ import DeveloperBlog from "./DeveloperBlog/DeveloperBlog";
 import MyNavbar from "./MyNavbar/MyNavbar";
 import Footer from "./Footer/Footer";
 import ManageJob from './MangeJob/ManageJob';
+import RequireAuth from "./RequireAuth/RequireAuth";
 
 function App(){
   return(
@@ -25,7 +26,7 @@ function App(){
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route path="/" element={<Home />} />
-      <Route path="/jobPost" element={<JobPost />} />
+      <Route path="/jobPost" element={<RequireAuth><JobPost /></RequireAuth>}/>
       <Route path="/service/:serviceId" element={<ServiceDetail />} />
       <Route path="/hireBlog" element={<HireBlog />} />
       <Route path="/developerBlog" element={<DeveloperBlog />}/>

@@ -19,8 +19,8 @@ function MyNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link as={Link} to="/developerBlog">Developer?</Nav.Link>
-          <Nav.Link as={Link} to="/hireBlog">Want to Hire?</Nav.Link>
+          <Nav.Link as={Link} to="/developerBlog">Developer</Nav.Link>
+          <Nav.Link as={Link} to="/hireBlog">Want to Hire</Nav.Link>
           <Nav.Link as={Link} to="/jobPost">Post Job</Nav.Link>
           <Nav.Link as={Link} to="/manageJob">Admin Task</Nav.Link>
         

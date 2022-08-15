@@ -7,8 +7,10 @@ import Spinner from "react-activity/dist/Spinner";
 import "react-activity/dist/Spinner.css";
 import MyNavbar from '../MyNavbar/MyNavbar';
 import './DeveloperBlog.css';
+import useFirebase from '../hooks/useFirebase';
 
 function DeveloperBlog() {
+      const{user}=useFirebase()
          const { register, handleSubmit,reset } = useForm();
          const onSubmit = data => {
                      console.log(data);
@@ -33,7 +35,7 @@ useEffect(() => {
   return (
   <>
    <div className='add-service'>
-         <h1 style={{fontSize:24,fontWeight:800,paddingTop:26,color:"salmon",textAlign:'center'}}>Want to write a Blog of how you get your dream job?</h1>
+         <h1 style={{fontSize:24,fontWeight:800,paddingTop:26,color:"salmon",textAlign:'center'}}>Hello~ {user ? user.displayName :''}<br/> Want to write a Blog of how you get your dream job?</h1>
         
        
          {/**React-hook-form */}
