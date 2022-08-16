@@ -22,7 +22,10 @@ function MyNavbar() {
           <Nav.Link as={Link} to="/developerBlog">Developer</Nav.Link>
           <Nav.Link as={Link} to="/hireBlog">Want to Hire</Nav.Link>
           <Nav.Link as={Link} to="/jobPost">Post Job</Nav.Link>
-          <Nav.Link as={Link} to="/manageJob">Admin Task</Nav.Link>
+          {
+            user &&  <Nav.Link as={Link} to="/another">Another</Nav.Link>
+          }
+         
         
             {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -47,7 +50,7 @@ function MyNavbar() {
               <Nav.Link as={Link} to="/login">Login</Nav.Link>
             }
          
-          <Nav.Link as={Link} to="/register">Register</Nav.Link>
+         <Nav.Link as={Link} to="/manageJob">Admin</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
