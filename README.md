@@ -1,6 +1,6 @@
 ### Tech-Japan
-Tech-Japan is recruitment site build focusing on both developer and recruiter.Here recruiter would find the best candidate and developer would get the best job in the market.
-#### There is a blog section in this app;blogs are written by developers who successfully got their dream job from this site. 
+Tech-Japan is recruitment site build focusing on both developers and recruiters. Here recruiters could find the best candidate and developers would get the best job in the market.
+#### There is a blog section; blogs are written by developers who successfully got their dream job from this site. 
 
 
 ##### live site : https://tech-japan-5.netlify.app/
