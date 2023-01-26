@@ -3,7 +3,7 @@ Tech-Japan is recruitment site build focusing on both developers and recruiters.
 #### There is a blog section; blogs are written by developers who successfully got their dream job from this site. 
 
 
-##### live site : https://tech-japan-5.netlify.app/
+##### live site : [https://tech-japan-5.netlify.app/](https://tech-japan1.netlify.app/)
 ##### backend code: https://github.com/pabelmahbub/tech-japan and API: https://tech-japan-production.up.railway.app/
 
 #### Language
