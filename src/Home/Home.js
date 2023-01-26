@@ -8,17 +8,10 @@ import Footer from '../Footer/Footer';
 function Home() {
   return (
     <div>
-                            
-                              <Banner></Banner>
-                          
-                              <div style={{marginTop:50,marginRight:15,marginLeft:15}}>
-                              <Services></Services>
-                             </div>
-                             
-                            
-                            
-                             
-                            
+        <Banner></Banner>
+        <div style={{marginTop:50,marginRight:15,marginLeft:15}}>
+        <Services></Services>
+        </div>
     </div>
   )
 }

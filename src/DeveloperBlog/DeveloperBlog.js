@@ -14,7 +14,7 @@ function DeveloperBlog() {
          const { register, handleSubmit,reset } = useForm();
          const onSubmit = data => {
                      console.log(data);
-                     axios.post('https://tech-japan-express.herokuapp.com/addBlog', data)
+                     axios.post('https://tech-japan-production.up.railway.app/addBlog', data)
                      .then(res=>{
                               console.log(res);
                               if(res.data.insertedId){
@@ -26,7 +26,7 @@ function DeveloperBlog() {
 
 const [jobBlogs, setJobBlogs] = useState([]);
 useEffect(() => {
-  fetch('https://tech-japan-express.herokuapp.com/postBlog')
+  fetch('https://tech-japan-production.up.railway.app/postBlog')
   .then(res=>res.json())
   .then(data=>setJobBlogs(data));
 }, [])
@@ -35,7 +35,7 @@ useEffect(() => {
   return (
   <>
    <div className='add-service'>
-         <h1 style={{fontSize:24,fontWeight:800,paddingTop:26,color:"salmon",textAlign:'center'}}>Hello~ {user ? user.displayName :''}<br/> Want to write a Blog of how you get your dream job?</h1>
+         <h1 style={{fontSize:20,fontWeight:400,paddingTop:26,color:"salmon",textAlign:'center'}}>Hello~ {user ? user.displayName :''}<br/>write a Blog of how you got your dream job!</h1>
         
        
          {/**React-hook-form */}
@@ -55,11 +55,9 @@ useEffect(() => {
 
     <div id="dev-blog">
 
-    <h4 style={{textAlign:'center',paddingTop:"30px"}}> Developer's story of succesfully getting a job from Tech-Japan.</h4>
-    <h5 style={{paddingLeft:'30px',paddingRight:'30px',paddingTop:'20px',textAlign:'center'}}>Almost exactly two years earlier, I had written a brief article recounting my first two weeks in freeCodeCamp. It was meant to help keep myself accountable for staying on track, however, it now serves as a timestamp for me to trace when I started my learning. The first line in the article was,
-One of my favourite things to read was stories of how established developers started their journey coding.
-The opportunity to share my own story on the same platform that got me started was an absolutely incredible feeling. It chokes me up every time I think about it.</h5>
-<h1 style={{textAlign:'center',paddingTop:"30px",textDecorationLine:'underline',fontweight:800,fontSize:32,color:'cyan'}}>Our Journey as a Developer.</h1>
+    <h4 style={{textAlign:'center',paddingTop:"30px"}}> Developer's story of succesfully getting a job from Tech-Japan</h4>
+    <h5 style={{paddingLeft:'30px',paddingRight:'30px',paddingTop:'26px',textAlign:'center'}}>Hired in famous companies.</h5>
+    <h1 style={{textAlign:'center',paddingTop:"60px",paddingBottom:"40px",textDecorationLine:'underline',fontweight:400,fontSize:28,color:'goldenrod'}}>Blog: Our Journey as a Developer.</h1>
     
     <div>
             {

@@ -10,7 +10,7 @@ const ServiceDetail = () => {
     const [service, setService] = useState("");
     useEffect(() => {
       
-        const url =`https://tech-japan-express.herokuapp.com/jobs/${serviceId}`;
+        const url =`https://tech-japan-production.up.railway.app/jobs/${serviceId}`;
         fetch(url)
         .then(res =>res.json())
        

@@ -7,7 +7,7 @@ function JobPost() {
          const { register, handleSubmit,reset } = useForm();
          const onSubmit = data => {
                      console.log(data);
-                     axios.post('https://tech-japan-express.herokuapp.com/addJob', data)
+                     axios.post('https://tech-japan-production.up.railway.app/addJob', data)
                      .then(res=>{
                               console.log(res);
                               if(res.data.insertedId){

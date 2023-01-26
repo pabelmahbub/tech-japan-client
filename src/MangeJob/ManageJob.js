@@ -6,13 +6,13 @@ import "react-activity/dist/Spinner.css";
 function ManageJob() {
       const [services, setServices] = useState([]);
       useEffect(() => {
-         fetch ('https://tech-japan-express.herokuapp.com/jobs')
+         fetch ('https://tech-japan-production.up.railway.app/jobs')
          .then(res => res.json())
          .then(data => setServices(data));
       }, [])
 
       const handleDelete = id =>{
-                              const url = `https://tech-japan-express.herokuapp.com/manageJob/${id}`;
+                              const url = `https://tech-japan-production.up.railway.app/manageJob/${id}`;
                               fetch(url, {method:'DELETE'})
                               .then(res=>res.json())
                               .then(data=>{
