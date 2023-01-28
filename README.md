@@ -3,8 +3,8 @@ Tech-Japan is recruitment site build focusing on both developers and recruiters.
 #### There is a blog section; blogs are written by developers who successfully got their dream job from this site. 
 
 
-##### live site : https://tech-japan-5.netlify.app/
-##### backend code: https://github.com/pabelmahbub/tech-japan
+##### live site : [https://tech-japan-5.netlify.app/](https://tech-japan1.netlify.app/)
+##### backend code: https://github.com/pabelmahbub/tech-japan and API: https://tech-japan-production.up.railway.app/
 
 #### Language
 - ReactJavascript)
@@ -53,15 +53,20 @@ Update the app.json file according to the new configuration.
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emailjs/browser": "^3.6.2",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.4",
+    "bootstrap": "^5.2.0",
+    "firebase": "^9.9.2",
     "react": "^18.2.0",
+    "react-activity": "^2.1.3",
+    "react-bootstrap": "^2.5.0",
+    "react-containers": "^16.0.5",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.34.2",
+    "react-hook-form": "^7.34.0",
+    "react-router-bootstrap": "^0.26.2",
     "react-router-dom": "^6.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -69,24 +74,6 @@ Update the app.json file according to the new configuration.
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "devDependencies": {
     "tailwindcss": "^3.1.8"
