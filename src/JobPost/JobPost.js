@@ -19,7 +19,7 @@ function JobPost() {
 
   return (
    <div className='add-service'>
-         <h1 style={{fontSize:22,paddingTop:26,color:"#137373",textAlign:'center'}}>Want to hire? Write the job Post here.</h1>
+      <h1 className='titleStyle'>Want to hire? Write the job Post here.</h1>
          {/**React-hook-form */}
       <form onSubmit={handleSubmit(onSubmit)}>
       <input {...register("companyName", { required: true, maxLength: 20 })} placeholder='Company Name *(or psuedo name)'/>

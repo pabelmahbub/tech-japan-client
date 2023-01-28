@@ -10,6 +10,7 @@ function Home() {
     <div>
         <Banner></Banner>
         <div style={{marginTop:50,marginRight:15,marginLeft:15}}>
+          <h2 style={{textAlign:"center", color:'green', fontFamily:"monospace"}}>Job DashBoard</h2>
         <Services></Services>
         </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './ServiceDetail.css';
 import { useState,useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import AnotherBox from '../AnotherBox/AnotherBox';
@@ -19,25 +20,23 @@ const ServiceDetail = () => {
     
     return (
 
- <div>
 
 
-<div className='service-detail' style={{display:'flex',width:'100%'}}>
-
-<div className='service-left' style={{paddingLeft:'10%',paddingRight:'10%',width:'70%',backgroundColor:"rgb(242, 247, 249)"}}>
+<div className='service-detail'>
+   <div className='service-left'>
            
-           <img src={service.image} alt='' width={60} height={60} style={{marginTop:"10px",borderRadius:30}}></img>
-           <h1 style={{fontSize:22,fontWeight:800,paddingTop:'10px'}}>Company Name: {service.companyName}</h1>
-           <h1 style={{fontSize:18,fontWeight:700,paddingTop:'10px'}}>Job position: {service.positionName}</h1>
+        <img src={service.image} alt='' width={70} height={70} style={{marginTop:"10px",borderRadius:30}}></img>
+        <h1 className='topText'>Company Name: {service.companyName}</h1>
+        <h1 className='positionText'>Job position: {service.positionName}</h1>
       
            
 
-       <h6 style={{fontSize:16,fontWeight:600,paddingTop:'10px'}}>languages Level:{service.languageLevel}</h6>
-       <h5 style={{fontSize:14,fontWeight:600,paddingTop:'10px'}}>programming Languages:{service.programminglanguages}</h5>
-       <h4 style={{fontSize:14,fontWeight:600,paddingTop:'10px'}}>Job location is: {service.location}</h4>
-       <h5 style={{fontSize:14,fontWeight:500,paddingTop:'10px'}}>Your responsibilities: {service.jobDescription}</h5>
-       <h5 style={{fontSize:15,fontWeight:600,paddingTop:'10px'}}>Must required {service.mustSkills}</h5> 
-        <h3 style={{fontSize:15,fontWeight:600,paddingTop:'10px'}}>Salary Range(Yearly): ¥{service.salaryRange}</h3> 
+       <h5 className='descriptionText'>languages Level:{service.languageLevel}</h5>
+       <h5 className='descriptionText'>programming Languages:{service.programminglanguages}</h5>
+       <h5 className='descriptionText'>Job location : {service.location}</h5>
+       <h5 className='descriptionText'>Your responsibilities: {service.jobDescription}</h5>
+       <h5 className='descriptionText'>Must required {service.mustSkills}</h5> 
+       <h5 className='descriptionText'>Salary Range(Yearly): ¥{service.salaryRange}</h5> 
 
 
 
@@ -51,30 +50,20 @@ const ServiceDetail = () => {
 
 
 
-          <div className='text-center'> 
-               <Link to="/login">
-                   <button  style={{marginBottom:"20px"}} className='btn btn-primary'>Proceed to apply</button>
-                   <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" />
-               </Link> 
-         </div>
-       </div>
-
-
-    <div style={{width:'30%'}}>
-
-        <AnotherBox></AnotherBox>
+            <div className='text-center'> 
+                <Link to="/login">
+                    <button  style={{marginBottom:"20px"}} className='btn btn-primary'>Proceed to apply</button>
+                    <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" />
+                </Link> 
+            </div>
     </div>
-</div>
-       
 
 
+            <div style={{width:'30%'}}>
 
-    
-
-       
-
-
-        </div>
+                <AnotherBox></AnotherBox>
+            </div>
+  </div>
     );
 };
 

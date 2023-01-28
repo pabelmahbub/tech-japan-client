@@ -1,0 +1,27 @@
+.service-detail {
+    display: flex;
+    width: 100%
+}
+
+.service-left {
+    padding-left: 10%;
+    padding-right: 10%;
+    width:80%;
+    background-color: rgb(242, 247, 249)
+}
+.topText {
+    font-size:24px;
+    font-weight:600;
+    padding-top:10px;
+}
+
+.positionText {
+    font-size:20px;
+    font-weight:500;
+    padding-top: 10px
+}
+
+.descriptionText {
+    font-size:12px;
+    padding-top:10px;
+}

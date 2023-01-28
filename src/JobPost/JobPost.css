@@ -1,10 +1,18 @@
 .add-service form {
-                              display: flex;
-                              flex-direction: column;
-                              justify-content: center;
-                              align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 }
 .add-service form input,textarea{
-                              width: 55%;
-                              margin: 10px;
+            width: 35%;
+            margin: 10px;
+            padding:7px
+}
+
+.titleStyle {
+            font-size:26px;
+            padding:46px;
+            color:"#137373";
+            text-align: center
 }

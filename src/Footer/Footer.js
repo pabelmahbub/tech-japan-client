@@ -14,7 +14,7 @@ function Footer() {
   return (
     <div className='footer'>
        {/* <p> Time : {date.toLocaleTimeString()}</p> */}
-       <p> Date : {date.toLocaleDateString()}</p>
+       <p> Date : {date.toLocaleString()}</p>
        <p>Copyright &copy;tech-japan</p>
     </div>
   )

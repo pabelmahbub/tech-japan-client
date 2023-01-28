@@ -25,7 +25,7 @@ function App(){
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/" element={<Home />} />
-      <Route path="/jobPost" element={<RequireAuth><JobPost /></RequireAuth>}/>
+      <Route path="/jobPost" element={<JobPost />} />
       <Route path="/service/:serviceId" element={<ServiceDetail />} />
       <Route path="/hireBlog" element={<HireBlog />} />
       <Route path="/developerBlog" element={<DeveloperBlog />}/>

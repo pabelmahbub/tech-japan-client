@@ -1,0 +1,13 @@
+.login {
+    display: flex;
+    justify-content: center;
+    height:100vh
+}
+
+.buttonStyle {
+    background-color:rgb(84, 197, 241);
+    border: none;
+    border-radius: 5px; 
+    padding:5px;
+    font-size:17px
+}

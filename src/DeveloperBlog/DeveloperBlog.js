@@ -35,7 +35,7 @@ useEffect(() => {
   return (
   <>
    <div className='add-service'>
-         <h1 style={{fontSize:20,fontWeight:400,paddingTop:26,color:"salmon",textAlign:'center'}}>Hello~ {user ? user.displayName :''}<br/>write a Blog of how you got your dream job!</h1>
+     <h1 className='titleStyle'>Hello~ {user ? user.displayName :''}<br/>write a Blog of how you got your dream job!</h1>
         
        
          {/**React-hook-form */}
@@ -53,27 +53,25 @@ useEffect(() => {
     </div>
 
 
-    <div id="dev-blog">
-
-    <h4 style={{textAlign:'center',paddingTop:"30px"}}> Developer's story of succesfully getting a job from Tech-Japan</h4>
-    <h5 style={{paddingLeft:'30px',paddingRight:'30px',paddingTop:'26px',textAlign:'center'}}>Hired in famous companies.</h5>
-    <h1 style={{textAlign:'center',paddingTop:"60px",paddingBottom:"40px",textDecorationLine:'underline',fontweight:400,fontSize:28,color:'goldenrod'}}>Blog: Our Journey as a Developer.</h1>
-    
-    <div>
-            {
-              jobBlogs.length === 0 && <Spinner />
-            }
-    </div>
-    <div  className='devBlog-container'>
-                             
-    {
-        jobBlogs.map(service =><Blogs
-        key={service.id}
-        service={service}
-        ></Blogs>)
-    }
-  
-    </div>
+      <div id="dev-blog">
+        <h4 className='topText'> Developer's story of succesfully getting <br/><span className='spanStyle'>a job from Tech-Japan</span> </h4>
+        <h5 className='middleText'>Hired in famous companies.</h5>
+        <h1 className='blog'>Blog: Our Journey as a Developer.</h1>
+        <div>
+                {
+                  jobBlogs.length === 0 && <Spinner />
+                }
+        </div>
+        <div  className='devBlog-container'>
+                                
+        {
+            jobBlogs.map(service =><Blogs
+            key={service.id}
+            service={service}
+            ></Blogs>)
+        }
+      
+        </div>
    
 </div>
 

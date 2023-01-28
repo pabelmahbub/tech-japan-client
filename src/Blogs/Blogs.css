@@ -1,19 +1,40 @@
 .blogs-all{
-                            background-color:rgb(242, 247, 249);
-                              
-                              border-radius: 17px;
-                              padding-left: 20px;
-                              padding-right:20px;
-                              padding-bottom: 20px;
-                              margin:10px;
-                             /* margin-bottom: '40px';
-                             margin-top: '3%';
-                              padding-left: '10%';
-                              padding-right: "10%";
-                              align-self: center;
-                              align-items: center;
-                              align-content: center;
-                              text-align: center;
-                              padding-bottom: 10px; */
+  background-color:rgb(242, 247, 249);
+  border-radius: 17px;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-bottom: 20px;
+  margin:10px;
+}
 
-                          }
+.titleText {
+  font-size:19px;
+  color:salmon;
+  font-weight:500;
+  padding-top:10px
+}  
+
+.titleTextMiddle {
+  font-size:17px;
+  padding-top:7px
+} 
+
+.titleTextBottom {
+  font-size:16px;
+  padding-top:7px
+} 
+
+.anotherText {
+  font-size:16px;
+  padding-top:10px
+}
+
+.descriptionText {
+  font-size:13px;
+  padding-top:10px
+}
+
+.lastText {
+  font-size:10px;
+  padding-top:10px;
+}

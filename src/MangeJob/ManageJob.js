@@ -39,12 +39,12 @@ function ManageJob() {
         </div>
          <h3>Total job posts: {services.length}</h3>
          {
-                              services.map(service => <div style={{borderTop:"2px solid orange",paddingTop:'10px',paddingBottom:'10px'}}
-                                        key={service._id}>
-                                        <h4>{service.positionName}</h4>
-                                        <h4>{service.companyName}</h4>
-                                         <button className='btn btn-info mt-2' onClick={()=>handleDelete(service._id)}>delete</button>
-                              </div>)
+            services.map(service => <div style={{borderTop:"2px solid orange",paddingTop:'10px',paddingBottom:'10px'}}
+                      key={service._id}>
+                      <h4>{service.positionName}</h4>
+                      <h4>{service.companyName}</h4>
+                      <button className='btn btn-info mt-2' onClick={()=>handleDelete(service._id)}>delete</button>
+            </div>)
          }
     </div>
   )
